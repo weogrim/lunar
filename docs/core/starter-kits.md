@@ -6,15 +6,26 @@ If you want to get up and running quickly to review Lunar, this section is for y
 
 ## Livewire Starter Kit
 
-Lunar provides a starter kit as a reference to help you build your own custom e-commerce app. The starter kit is built using Laravel Livewire (as is our admin hub). You can quickly see how to load products, collections, use the cart and checkout.
+Lunar provides a starter kit as a reference to help you build your own custom e-commerce app. The starter kit is built 
+using Laravel Livewire (as is our admin hub). You can quickly see how to load products, collections, use the cart and 
+checkout.
 
-If you would prefer to install Lunar into your own Laravel application, please follow the [installation instructions](/core/installation).
+If you would prefer to install Lunar into your own Laravel application, please follow the 
+[installation instructions](/core/installation).
+
+::: info
+The starter kit is just that, a starting point for your project. It is **not** a comprehensive storefront and does not
+implement all functionality. It is up to you to develop the functionality you require for your project.
+:::
 
 ## Requirements
 
 - PHP ^8.1
+- Laravel 9|10
 - MySQL 8.0+ / PostgreSQL 9.2+
 - exif PHP extension (on most systems it will be installed by default)
+- intl PHP extension (on most systems it will be installed by default)
+- bcmath PHP extension (on most systems it will be installed by default)
 - GD PHP extension (used for image manipulation)
 
 ::: tip
@@ -23,7 +34,7 @@ This starter kit uses Meilisearch, for the best experience it is recommended you
 
 ## Installation
 
-### Clone the repo
+### Clone The Repo
 
 ```bash
 git clone --depth=1 https://github.com/lunarphp/livewire-starter-kit.git
@@ -42,7 +53,7 @@ Then install composer dependencies
 composer install
 ```
 
-### Configure the Laravel app
+### Configure The Laravel App
 
 Copy the `.env.example` file to `.env` and make sure the details match to your install.
 
@@ -52,7 +63,7 @@ cp .env.example .env
 
 All the relevant configuration files should be present in the repo.
 
-### Migrate and seed.
+### Migrate And Seed.
 
 Run the migrations
 
