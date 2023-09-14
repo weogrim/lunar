@@ -9,6 +9,9 @@ Products also belong to a `ProductType` and aside from the attributes, which you
 ## Creating a product
 
 ```php
+use Lunar\FieldTypes\TranslatedText;
+use Lunar\FieldTypes\Text;
+
 Lunar\Models\Product::create([
     'product_type_id' => $productTypeId,
     'status' => 'published',
